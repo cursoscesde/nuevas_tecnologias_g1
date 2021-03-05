@@ -91,7 +91,7 @@ students = []
 while True:
     #names.append(input("Ingrese nombre del estudiante: "))
     name = input("Ingrese nombre del estudiante: ")
-    numberGrades = input("Ingrese cuántas notas va a ingresar por estudiante")
+    numberGrades = int(input("Ingrese cuántas notas va a ingresar por estudiante"))
     finalGrade = average(numberGrades)
     students.append({"name": name, "grade": finalGrade})
     #grades.append(average)
@@ -104,5 +104,5 @@ while True:
 for i in range(len(students)):
     print(f"{i + 1}: El estudiante {students[i]['name']} obtuvo: {students[i]['grade']}")
 
-# myString = "Hola como estas"
+
 # print(myString[2:8])
